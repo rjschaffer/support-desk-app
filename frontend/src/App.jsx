@@ -3,11 +3,11 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Header from './components/Header'
-import Home from './pages/home' // not sure why this has to be lower case here; did change it actual filename to Home
+import Home from './pages/Home' // not sure why this has to be lower case here; did change it actual filename to Home
 import Login from './pages/Login'
 import Register from './pages/Register'
 import NewTicket from './pages/NewTicket'
-import PrivateRoute from './components/privateRoute'
+import PrivateRoute from './components/PrivateRoute'
 import Tickets from './pages/Tickets'
 import Ticket from './pages/Ticket'
 
