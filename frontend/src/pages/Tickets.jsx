@@ -25,6 +25,8 @@ function Tickets() {
         return <Spinner />
     }
 
+    console.log("1st log in tickets.jsx: " + tickets)
+
   return (
     <>
         <BackButton url='/' />

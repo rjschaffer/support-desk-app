@@ -28,6 +28,7 @@ export const getTickets = createAsyncThunk('tickets/getAll', async (_, thunkAPI)
     try {
         // Get token from local storage/state; thunkAPI lets you get stuff from other states via redux toolkit 
         const token = thunkAPI.getState().auth.user.token
+        console.log("1st log in slice: " + auth.user.token)
         return await ticketService.getTickets(token)
     } catch(error) {
         const message = (error.response && error.response.data && error.response.data.message) || error.message || error.toString()
